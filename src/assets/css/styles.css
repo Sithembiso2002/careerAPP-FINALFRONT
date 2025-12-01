@@ -1,0 +1,65 @@
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid skyblue;
+    overflow: hidden;
+    height: auto;
+    size: 200px;
+    width: 550px;
+}
+
+.boha{
+    display: flex;
+}
+
+.slide {
+    display: none; 
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%; 
+    height: auto;
+}
+
+.fade {
+    animation: fadeEffect 10s infinite;
+}
+
+@keyframes fadeEffect {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.slideshow-container .slide {
+    display: block;
+}
+
+.nav-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-arrows span {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}

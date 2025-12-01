@@ -1,0 +1,141 @@
+.application-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  animation: fadeIn 1s ease;
+  background: #20798f;
+  background-clip: padding-box;
+}
+
+/* 🔥 Gradient Title using background-clip */
+.form-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.form-title span {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+  -webkit-background-clip: text;   /* Safari / Chrome */
+  background-clip: text;           /* Standard */
+  color: transparent;
+  font-weight: 900;
+}
+
+.form-sub {
+  text-align: center;
+  color: #020101;
+  margin-bottom: 30px;
+}
+
+/* SECTION BOXES */
+.form-section {
+  background: #e2d9d9c9;
+  backdrop-filter: blur(4px);
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 25px;
+
+  border: 1px solid #e3e3e3;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+  background-clip: padding-box;
+}
+
+/* INPUT GROUPS */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #000000;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input-group input,
+.input-group select {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #742525;
+  border-radius: 10px;
+  transition: 0.3s;
+  background-clip: padding-box;   /* prevents background bleeding */
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 5px #6366f155;
+  color: #000000;
+}
+
+/* GRID SYSTEM */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+/* 🔥 Gorgeous Gradient Button using background-clip */
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  background-clip: border-box;
+
+  border: none;
+  color:#000000;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  /* Enhance text rendering */
+  -webkit-background-clip: padding-box;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #ffffff, #1dffff);
+  transition: background 0.9s ease-in-out; /* Your transition rule */
+  color: #1a0044;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/* FADE-IN ANIMATION */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .form-title {
+    font-size: 32px;
+  }
+}
+.h2, h2{
+  color: #011920;
+  font-weight: bolder;
+}
+label{
+  color: #011920;
+}
+input{
+  color: #000000;
+}

@@ -1,0 +1,131 @@
+
+html{
+	box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*, *:after,*:before{
+	box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 1%;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #081b29;
+}
+
+header{
+    text-align: center;
+    color: darkblue;
+    text-shadow: 2px 1px black;
+    padding-bottom: 3%;
+}
+
+form{
+    text-align: center;
+    border: 1px solid #081b29;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.man{
+    background-color: aliceblue;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px 5px;
+    color: black;
+    margin: 8%;
+}
+
+.mybut{
+    margin-left: 75%;
+    @media (min-width: 991px) {
+        margin-left: 92%;
+      }
+}
+
+input, button{
+    border: 2px solid  darkcyan;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+.act-but{
+    display: flex;
+    gap: 2%;
+}
+
+.inpu{
+    gap: 3%;
+}
+
+.canaddy{
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+}
+
+.canadd, .canaddy{
+    @media (min-width: 991px) {
+        margin-left: 10%;
+    }
+}
+
+.cann{
+    background-color:  darkgreen;
+    border: 2px solid darkgreen;
+}
+
+a, .canadd{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.sho{
+    border: 2px solid #0ef;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+button{
+    background: darkcyan;
+    color: #fff;
+    text-shadow: 1px 1px black;
+}
+  
+.btn-success{
+      padding: 5px 10px;
+      margin-right: 100%;
+}
+  
+.lo-acc{
+      @media (min-width: 991px) {
+          margin-left: 35%;
+        }
+}
+  
+table{
+      margin: auto;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 10px;
+}
+  
+table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+}
+    
+th, td {
+      padding: 15px;
+      @media (max-width: 991px){
+        padding: 0.5px;
+      }
+}
+

@@ -1,0 +1,146 @@
+.all-institutes-container {
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #183a5c;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.section-card {
+  margin-top: 20px;
+  background: #07456e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  cursor: pointer;
+  user-select: none;
+}
+
+th:hover {
+  background: #18b384;
+}
+
+tr:hover {
+  background: #18b384;
+}
+
+button {
+  margin: 2px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex; justify-content: center; align-items: center;
+}
+
+.modal-card {
+  background: #084891;
+  padding: 25px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.notification {
+  background: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.profile-card {
+  display: flex;
+  align-items: center;
+  background: #084891;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+.profile-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.profile-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.profile-info p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.status {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #fff;
+  margin-top: 4px;
+}
+
+.status.active { background: #4caf50; }
+.status.inactive { background: #f44336; }
+
+.profile-info button, .profile-edit-form button {
+  margin-top: 6px;
+  margin-right: 5px;
+  padding: 4px 8px;
+  font-size: 12px;
+}

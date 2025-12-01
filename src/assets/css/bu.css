@@ -1,0 +1,21 @@
+/* BU Page Background */
+.bu-page {
+  font-family: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+  color: #111827;
+  background: linear-gradient(135deg, #c2cff3, #203885);
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: background 0.5s ease;
+}
+.hero-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(169, 187, 211, 0.25); /* semi-transparent overlay for text readability */
+  z-index: 1;
+}
+.hero-overlay {
+  z-index: 2; /* make sure text stays on top */
+}
+

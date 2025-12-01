@@ -1,0 +1,184 @@
+
+.dashboard-header{ width: 100%;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(90deg, #4f46e5, #3b82f6);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+.headerTittle{
+    margin: 0; 
+    letter-spacing: 1px;
+}
+.profilebtn{
+    padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+            border: none;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+}
+.dashboard-nav{
+    display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem;
+}
+.studentbtn{
+    padding: 0.75rem 1.75rem;
+           font-weight: 600;
+           font-size: 1rem;
+           border-radius: 2rem;
+           text-decoration: none;
+           color: #fff;
+           background: linear-gradient(135deg, #4f46e5, #3b82f6);
+           box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+           transition: all 0.3s ease;
+           display: inline-flex;
+           align-items: center;
+           gap: 0.5rem;
+}
+.institutebtn{
+    padding: 0.75rem 1.75rem;
+           font-weight: 600;
+           font-size: 1rem;
+           border-radius: 2rem;
+           text-decoration: none;
+           color: #fff;
+           background: linear-gradient(135deg, #ef4444, #dc2626);
+           box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+           transition: all 0.3s ease;
+           display: inline-flex;
+           align-items: center;
+           gap: 0.5rem;
+}
+.facultybtn{
+    padding: 0.75rem 1.75rem;
+           font-weight: 600;
+           font-size: 1rem;
+           border-radius: 2rem;
+           text-decoration: none;
+           color: #fff;
+           background: linear-gradient(135deg, #f59e0b, #f97316);
+           box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+           transition: all 0.3s ease;
+           display: inline-flex;
+           align-items: center;
+           gap: 0.5rem;
+}
+.coursebtn{
+     padding: 0.75rem 1.75rem;
+           font-weight: 600;
+           font-size: 1rem;
+           border-radius: 2rem;
+           text-decoration: none;
+           color: #fff;
+           background: linear-gradient(135deg, #10b981, #06b6d4);
+           box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+           transition: all 0.3s ease;
+           display: inline-flex;
+           align-items: center;
+           gap: 0.5rem;
+}
+
+.card1{
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+        color: #fff;
+        padding: 1.75rem 1.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.totalstudents{
+    font-size: 1.25rem; 
+    font-weight: 700; 
+    margin-bottom: 0.5rem;
+}
+.dashboard-cards{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit,  minmax(220px, 1fr)); 
+    gap: 1.5rem; margin-top: 2rem;
+}
+.manageinstitutions{
+    align-self: start;
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+            border-radius: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+}
+.card2{
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+        color: #fff;
+        padding: 1.75rem 1.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.Managefaculties{
+    align-self: start;
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+            border-radius: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+}
+.card3{
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+        color: #fff;
+        padding: 1.75rem 1.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.managestudents{
+    align-self: start;
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+            border-radius: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+}
+.card5{
+    background: linear-gradient(135deg, #10b981, #06b6d4);
+        color: #fff;
+        padding: 1.75rem 1.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.managecourse{
+    align-self: start;
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+            border-radius: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+}

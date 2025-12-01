@@ -1,0 +1,173 @@
+/* Faculty Management Styles */
+.faculty-code {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.faculty-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty-info strong {
+  margin-bottom: 0.25rem;
+}
+
+.faculty-info small {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status-badge.active {
+  background: #e8f5e8;
+  color: #2e7d32;
+}
+
+.status-badge.inactive {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.status-badge.large {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+/* Detail Styles */
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.detail-header h4 {
+  margin: 0;
+  color: #2d3748;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  background: #f7fafc;
+  border-radius: 6px;
+}
+
+.detail-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.detail-value {
+  color: #2d3748;
+  font-size: 1rem;
+}
+
+/* Form Enhancements */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+/* Table Enhancements */
+.faculties-table .action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.faculties-table .btn-view,
+.faculties-table .btn-edit,
+.faculties-table .btn-delete {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+}
+
+.faculties-table .btn-view {
+  background: #e6fffa;
+  color: #234e52;
+}
+
+.faculties-table .btn-view:hover {
+  background: #b2f5ea;
+}
+
+.faculties-table .btn-edit {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.faculties-table .btn-edit:hover {
+  background: #feb2b2;
+}
+
+.faculties-table .btn-delete {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.faculties-table .btn-delete:hover {
+  background: #feb2b2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .detail-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
+
+.institution-badge {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}

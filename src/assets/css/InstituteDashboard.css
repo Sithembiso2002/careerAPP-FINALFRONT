@@ -1,0 +1,277 @@
+:root {
+  --gold: #cfa92d;
+  --black: #1b1b1b;
+  --white: #144157;
+}
+
+.dashboard-wrapper {
+  padding: 20px;
+  background: #34329c;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 20px 10px;
+  background: var(--black);
+  color: var(--gold);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+/* University Cards Grid */
+.universities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 25px;
+}
+
+/* University Card */
+.university-card {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(52, 194, 182, 0.795);
+  transition: 0.3s ease-in-out;
+}
+
+.university-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(226, 29, 29, 0.22);
+}
+
+.university-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.uni-details {
+  padding: 15px;
+}
+
+.uni-details h2 {
+  color: var(--black);
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.uni-location {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.uni-desc {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* Badge */
+.badge {
+  background: var(--gold);
+  color: var(--black);
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+/* Button */
+.btn-view {
+  width: 100%;
+  background: var(--gold);
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-view:hover {
+  background: #e2be45;
+}
+
+/* Advice Section */
+.tips-section {
+  margin-top: 50px;
+  padding: 25px;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 12px;
+}
+
+.tips-section h2 {
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.tips-section ul {
+  padding-left: 20px;
+}
+
+.tips-section li {
+  margin-bottom: 8px;
+}
+
+/* SLIDER CONTAINER */
+.top-slider {
+  width: 100%;
+  overflow: hidden;
+  height: 280px;
+  margin-top: 20px;
+  border-radius: 12px;
+  position: relative;
+}
+
+/* TRACK */
+.slide-track {
+  display: flex;
+  width: calc(280px * 8); /* total width of images */
+  animation: scroll 35s linear infinite;
+}
+
+/* IMAGES */
+.slide-image {
+  width: 100%;
+  max-width: 280px;
+  height: 280px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+
+/* ANIMATION */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.uni-top-image {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.uni-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  animation: imageSlideIn 0.9s ease-out;
+}
+
+/* The main image */
+.uni-top-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.15);
+  animation: imageZoomOut 1.5s ease forwards;
+}
+
+/* Dark gradient overlay */
+.uni-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0));
+  color: white;
+}
+
+/* Title text */
+.uni-image-overlay h2 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.5);
+}
+
+/* Animation for slide-in effect */
+@keyframes imageSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth zoom-out on load */
+@keyframes imageZoomOut {
+  from {
+    transform: scale(1.25);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.site-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: rgb(182, 184, 185);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* ADVANCED CSS3 STYLING FOR <span> */
+.top-highlight {
+  background: linear-gradient(45deg, #3c2658, #dfddecd8, #1d6579);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Standard property */
+background-clip: text;
+
+/* Vendor-prefixed version for WebKit browsers */
+-webkit-background-clip: text;
+
+/* Ensures the text is transparent so the gradient shows */
+-webkit-text-fill-color: transparent;
+
+
+  font-weight: 900;
+  position: relative;
+
+  /* Smooth glow animation */
+  animation: glowPulse 4s infinite ease-in-out;
+}
+
+/* CSS3 GLOW ANIMATION */
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 10px rgba(160, 112, 138, 0.6),
+                 0 0 20px rgba(221, 221, 230, 0.5),
+                 0 0 30px rgba(151, 162, 165, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(63, 42, 54, 0.9),
+                 0 0 40px rgba(106, 92, 255, 0.8),
+                 0 0 60px rgba(42, 82, 94, 0.7);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(90, 47, 71, 0.6),
+                 0 0 20px rgba(54, 49, 105, 0.5),
+                 0 0 30px rgba(14, 34, 39, 0.4);
+  }
+}
+div.compare-card{
+    color: aliceblue;
+    background-color: var(--white);
+}
+div.modal-content.slide-up{
+    background-color: #021b27;
+}

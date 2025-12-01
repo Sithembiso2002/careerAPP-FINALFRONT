@@ -1,0 +1,345 @@
+:root{
+  --accent-1: #1a73e8;
+  --accent-2: #6f42c1;
+  --muted: #6b7280;
+  --bg: #0d243b;
+  --card: #fafafa;
+}
+
+/* Page container */
+.nul-page{
+  font-family: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+  color: #ffffff;
+  background: var(--bg);
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HERO */
+.hero{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: stretch;
+  margin-bottom: 2rem;
+}
+
+.hero-media{
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(16,24,40,0.08);
+}
+
+.hero-image{
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.03);
+  transition: transform 8s ease;
+}
+
+.hero-media:hover .hero-image{
+  transform: scale(1);
+}
+
+.hero-overlay{
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  z-index: 4;
+  color: #fff;
+  max-width: 70%;
+  text-shadow: 0 6px 16px rgba(0,0,0,0.45);
+}
+
+.hero-title{
+  margin: 0 0 8px;
+  font-size: 2.35rem;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+/* gradient Top span (uses vendor prefixes) */
+.top-highlight{
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text; /* standard */
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  padding: 0 6px;
+  border-radius: 4px;
+  box-decoration-break: clone;
+  animation: glowPulse 3s infinite ease-in-out;
+}
+
+/* Glow animation for the top span */
+@keyframes glowPulse {
+  0% { text-shadow: 0 0 8px rgba(26,115,232,0.45); }
+  50% { text-shadow: 0 0 18px rgba(111,66,193,0.6); }
+  100% { text-shadow: 0 0 8px rgba(26,115,232,0.45); }
+}
+
+.hero-sub{
+  margin: 0 0 12px;
+  color: rgba(255,255,255,0.95);
+  font-size: 1.05rem;
+}
+
+/* CTA buttons */
+.hero-cta .btn{
+  margin-right: 0.6rem;
+}
+
+.hero-gallery{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.hero-gallery img{
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(2,6,23,0.06);
+}
+
+/* Quick facts */
+.section-title{
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.quick-facts{
+  margin-bottom: 2rem;
+}
+
+.facts-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.fact-card{
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.04);
+}
+
+/* Faculties */
+.faculties{
+  margin-bottom: 2rem;
+}
+
+.faculty-controls{
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.faculty-btn{
+  background: transparent;
+  border: 1px solid rgba(15,23,42,0.08);
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faculty-btn.active{
+  background: linear-gradient(90deg, rgba(26,115,232,0.12), rgba(111,66,193,0.08));
+  border-color: transparent;
+  color: var(--accent-1);
+  box-shadow: 0 6px 18px rgba(26,115,232,0.06);
+}
+
+.faculty-content{
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1rem;
+}
+
+/* Student life */
+.student-life{
+  margin-bottom: 2rem;
+}
+
+.life-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+/* Admissions */
+.admissions{
+  margin-bottom: 2rem;
+}
+
+.admissions-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.admissions-card{
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(2,6,23,0.04);
+}
+
+/* Contact & CTA */
+.contact-cta{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contact-card, .cta-card{
+  background: var(--card);
+  padding: 1.15rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.05);
+}
+
+/* Purpose */
+.purpose{
+  color: #dbd5d5;
+  font-size: 0.98rem;
+  font-weight: bold;
+  background: linear-gradient(180deg, rgba(26,115,232,0.03), transparent);
+  padding: 1rem;
+  border-radius: 10px;
+}
+h3{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* Buttons */
+.btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 120ms ease, box-shadow 160ms ease;
+}
+
+.btn-primary{
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  color: white;
+  box-shadow: 0 8px 26px rgba(26,115,232,0.22);
+}
+
+.btn-primary:hover{ transform: translateY(-3px); }
+
+.btn-outline{
+  background: transparent;
+  color: var(--accent-1);
+  border: 1px solid rgba(26,115,232,0.12);
+}
+
+/* Modal */
+.modal-backdrop{
+  position: fixed;
+  inset: 0;
+  background: rgba(2,6,23,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 60;
+}
+
+.modal{
+  width: 420px;
+  max-width: calc(100% - 24px);
+  background: #355574;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 30px 70px rgba(2,6,23,0.35);
+  position: relative;
+}
+
+.modal-close{
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  background: transparent;
+  border: 0;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* Form */
+.apply-form label{
+  display: block;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.apply-form input{
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(2,6,23,0.06);
+}
+
+/* Small screens */
+@media (max-width: 900px){
+  .hero{ grid-template-columns: 1fr; }
+  .hero-image{ height: 300px; }
+  .hero-gallery{ flex-direction: row; }
+  .facts-grid{ grid-template-columns: repeat(2, 1fr); }
+  .life-grid{ grid-template-columns: repeat(2, 1fr); }
+  .faculty-content{ grid-template-columns: 1fr; }
+  .admissions-grid{ grid-template-columns: 1fr; }
+  .contact-cta{ grid-template-columns: 1fr; }
+}
+
+
+
+/* Staggered fade-slide-up */
+.fade-slide-up {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: slideFadeIn 0.8s forwards;
+}
+@keyframes slideFadeIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hover zoom effect for cards */
+.hover-zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-zoom:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Sticky CTA buttons */
+.sticky-cta {
+  position: sticky;
+  top: 1rem;
+  z-index: 50;
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}

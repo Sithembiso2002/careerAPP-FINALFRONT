@@ -1,0 +1,244 @@
+/* GLOBAL */
+
+
+/* GRID LAYOUT */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  grid-template-rows: 70px 1fr;
+  height: 100vh;
+}
+
+/* ---------------- TOP NAV ---------------- */
+.top-nav {
+  grid-column: span 2;
+  background: linear-gradient(120deg, #4f46e5, #6d28d9);
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.app-title {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.notifications {
+  position: relative;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  background: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 8px;
+  top: -5px;
+  right: -8px;
+  font-size: 12px;
+}
+
+.profile-small {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.profile-small img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* ---------------- SIDEBAR ---------------- */
+.sidebar-advanced {
+  background: #20798f;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px;
+  box-shadow: 3px 0 15px rgba(0,0,0,0.1);
+  gap: 12px;
+}
+
+.sidebar-advanced button {
+  padding: 12px;
+  background: #b32222;
+  border: none;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar-advanced button:hover {
+  transform: translateX(5px);
+  background: #e8e8e8;
+}
+
+.sidebar-advanced .active {
+  background: #4f46e5;
+  color: white;
+  transform: translateX(8px);
+}
+
+/* ---------------- MAIN CONTENT ---------------- */
+.transition-area {
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.fade-slide {
+  animation: fadeSlide 0.5s ease;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------- CARDS ---------------- */
+.glass-card {
+  background: rgba(255, 255, 255, 0.55);
+  padding: 30px;
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  animation: fadeSlide 0.5s;
+}
+
+/* ---------------- FLOATING FORM ---------------- */
+.floating-form .input-group {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 5px #4f46e57a;
+}
+
+.input-group label {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  transition: 0.3s;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -8px;
+  font-size: 13px;
+  background: white;
+  padding: 0 5px;
+}
+
+/* ---------------- SUBMIT BUTTON ---------------- */
+.btn-submit {
+  padding: 12px;
+  background: #4f46e5;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #3b33b7;
+}
+
+/* ---------------- QUICK ACTIONS ---------------- */
+.quick-actions {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.qa-card {
+  flex: 1;
+  background: #fafafa;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.qa-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ---------------- TABLE ---------------- */
+.interactive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.interactive-table th {
+  background: #4f46e5;
+  color: white;
+  padding: 12px;
+}
+
+.interactive-table td {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.interactive-table tr:hover {
+  background: #f2f2ff;
+  cursor: pointer;
+}
+
+.tag {
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.tag-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.tag-approved {
+  background: #121a14;
+  color: #155724;
+}
+
+
+
+
+
