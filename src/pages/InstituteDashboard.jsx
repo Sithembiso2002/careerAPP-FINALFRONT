@@ -331,29 +331,6 @@ const goToAllInstitutions = () => {
 </nav>
 
 
-{/*{profileModalVisible && (
-        <div className="modal-overlay" onClick={closeProfileModal}>
-          <div className="modal-card" onClick={(e) => e.stopPropagation()}>
-            <h3>Admin Profile</h3>
-            <div className="form-group">
-              <label>Name</label>
-              <input type="text" disabled value={adminData?.name || "Admin"} />
-            </div>
-            <div className="form-group">
-              <label>Email</label>
-              <input type="email" disabled value={adminData?.email || "N/A"} />
-            </div>
-            <div style={{ marginTop: "1rem", display: "flex", justifyContent: "space-between" }}>
-              <button className="btn-secondary" onClick={closeProfileModal}>
-                Close
-              </button>
-              <button className="btn-danger" onClick={handleLogout}>
-                Logout
-              </button>
-            </div>
-          </div>
-        </div>
-      )}*/}
 
     </div>
   );
