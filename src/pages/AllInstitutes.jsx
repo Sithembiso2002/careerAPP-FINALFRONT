@@ -56,17 +56,7 @@ const AllInstitutes = () => {
       faculty_count: 3,
       course_count: 5
     },
-    {
-      institute_id: 5,
-      name: 'University of Oxford',
-      type: 'University',
-      address: 'Oxford OX1 2JD, UK',
-      contact: '+44-1865-270000',
-      email: 'admissions@ox.ac.uk',
-      createdAt: '2023-05-12T16:30:00Z',
-      faculty_count: 5,
-      course_count: 7
-    },
+   
     {
       institute_id: 6,
       name: 'National Institute of Technology',
@@ -112,7 +102,7 @@ const AllInstitutes = () => {
       }
       
       const data = await response.json();
-      console.log('📊 API response:', data);
+      console.log('API response:', data);
       
       if (data.success && data.data) {
         setInstitutes(data.data);
@@ -464,7 +454,7 @@ const AllInstitutes = () => {
         </button>
         
         <div>
-          <h1 style={styles.title}>🏛️ All Educational Institutions</h1>
+          <h1 style={styles.title}>All Educational Institutions</h1>
           <p style={styles.subtitle}>
             Browse {institutes.length} institutions from our database
           </p>
@@ -536,7 +526,7 @@ const AllInstitutes = () => {
       {/* Institutes Grid */}
       {filteredInstitutes.length === 0 ? (
         <div style={styles.emptyState}>
-          <div style={styles.emptyIcon}>🏛️</div>
+          <div style={styles.emptyIcon}></div>
           <h3 style={styles.emptyTitle}>No Institutions Found</h3>
           <p style={styles.emptyText}>
             Try adjusting your search to find what you're looking for.
