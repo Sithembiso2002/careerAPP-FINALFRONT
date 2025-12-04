@@ -64,7 +64,6 @@ export default function Login() {
       // Redirect based on role
       if (formData.role === "student") navigate("/student");
       else if (formData.role === "institute") navigate("/institute");
-      else if (formData.role === "admin") navigate("/admin");
     } catch (err) {
       console.error("Login error:", err);
       setError(err.response?.data?.message || "Login failed");
@@ -112,7 +111,6 @@ export default function Login() {
                 >
                   <option value="student">Student</option>
                   <option value="institute">Institute</option>
-                  <option value="admin">Admin</option>
                 </select>
                 <label>Role</label>
               </div>

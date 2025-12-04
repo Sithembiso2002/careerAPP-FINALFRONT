@@ -12,9 +12,7 @@ export default function AdminLogin() {
     e.preventDefault();
     try {
       // Call backend login API
-      //const res = await API.post('/admin/login', { email, password });
-      const res = await API.post('/admin/login', { email, password }); // <--- only /login now
-
+      const res = await API.post('/auth/admin/login', { email, password });
 
       // Save token to localStorage
       localStorage.setItem('token', res.data.token);
@@ -29,6 +27,7 @@ export default function AdminLogin() {
       alert(error.response?.data?.message || 'Login failed!');
     }
   };
+
 
   return (
     <main>

@@ -95,14 +95,15 @@ const AllInstitutes = () => {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
       
-      const response = await fetch('http://localhost:5000/api/public/institutes', {
-        method: 'GET',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        },
-        signal: controller.signal
-      });
+      const response = await fetch(`${import.meta.env.VITE_API_URL || 'https://careerapp-final.onrender.com'}/api/public/institutes`, {
+  method: 'GET',
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+  },
+  signal: controller.signal
+});
+
       
       clearTimeout(timeoutId);
       

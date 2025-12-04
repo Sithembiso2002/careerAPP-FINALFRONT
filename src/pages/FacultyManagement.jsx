@@ -436,14 +436,14 @@ export default function FacultyManagement() {
 
         <div className="action-buttons">
           <button className="btn-primary" onClick={openAddModal}>
-            + Add Faculty
+            Add Faculty
           </button>
           <button 
             className="btn-secondary" 
             onClick={exportFaculties}
             disabled={faculties.length === 0}
           >
-            📊 Export CSV
+            CSV
           </button>
           {selectedFaculties.length > 0 && (
             <span className="selected-count">

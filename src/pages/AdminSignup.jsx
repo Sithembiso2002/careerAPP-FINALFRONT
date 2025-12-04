@@ -8,28 +8,23 @@ export default function AdminSignup() {
   const [password, setPassword] = useState('');
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      // Call backend API
-      {/*const res = await API.post('/signup', {
-        name,      // backend expects 'name'
-        email,
-        password,
-      });*/}
+  e.preventDefault();
+  try {
+    // Call backend API
+    const res = await API.post('/auth/admin/signup', { name, email, password });
 
-      const res = await API.post('/admin/signup', { name, email, password }); // <--- only /signup now
+    alert(res.data.message || 'Admin registered successfully!');
 
-      alert(res.data.message || 'Admin registered successfully!');
+    // Reset form
+    setName('');
+    setEmail('');
+    setPassword('');
+  } catch (error) {
+    console.error('Signup error:', error);
+    alert(error.response?.data?.message || 'Signup failed. Please try again.');
+  }
+};
 
-      // Reset form
-      setName('');
-      setEmail('');
-      setPassword('');
-    } catch (error) {
-      console.error('Signup error:', error);
-      alert(error.response?.data?.message || 'Signup failed. Please try again.');
-    }
-  };
 
   const handleReset = () => {
     setName('');

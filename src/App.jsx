@@ -57,22 +57,23 @@ export default function App() {
                 </li>
                 
                 {/* Admin links */}
-                {/* <li>
+                 <li>
                   <Link to="/admin/login">
                     <i className="fa fa-fw fa-wrench"></i>Admin
                   </Link>
-                </li> */}
-                <li>
-                  <Link to="/admin"><i className="fa fa-fw fa-wrench"></i> Admin</Link>
-                </li>
+                </li> 
+                {/*<li>
+                  <Link to="/admin">
+                  <i className="fa fa-fw fa-wrench"></i> Admin</Link>
+                </li>*/}
 
                 <li>
-                  <Link to="/institute">
+                  <Link to="/login">
                     <i className="fa fa-fw fa-building"></i> Institute
                   </Link>
                 </li>
                 <li>
-                  <Link to="/student"><i className="fa fa-fw fa-user"></i> Student</Link>
+                  <Link to="/login"><i className="fa fa-fw fa-user"></i> Student</Link>
                 </li>
                 
                 {/* ADD THIS LINE - Link to View Admissions */}

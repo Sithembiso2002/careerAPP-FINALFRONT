@@ -1,4 +1,4 @@
-//frontend\src\api.js
+{/*//frontend\src\api.js
 import axios from 'axios';
 
 const API = axios.create({
@@ -31,17 +31,18 @@ API.interceptors.response.use(
   }
 );
 
-export default API;
+export default API;*/}
 
 
 
 
 
 
-{/*import axios from 'axios';
+import axios from 'axios';
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000' // REMOVED /auth from here
+  baseURL: import.meta.env.VITE_API_URL || 'https://careerapp-final.onrender.com/'
+  
 });
 
 // Add token to every request if it exists
@@ -68,4 +69,4 @@ API.interceptors.response.use(
   }
 );
 
-export default API;*/}
+export default API;

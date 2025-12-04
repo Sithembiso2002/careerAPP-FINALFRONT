@@ -1,5 +1,7 @@
 // frontend/src/pages/ApplicationsManagement.jsx
 import React, { useState, useEffect } from "react";
+import '../assets/css/admin.css';
+import '../assets/css/adminhome.css';
 import API from "../api";
 import { 
   Search, 

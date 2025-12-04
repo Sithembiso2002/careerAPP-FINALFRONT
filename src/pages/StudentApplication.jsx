@@ -42,7 +42,7 @@ export default function StudentApplication() {
       try {
         setDataLoading(prev => ({ ...prev, institutes: true }));
         
-        const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/institutions`);
+const response = await fetch(`${import.meta.env.VITE_API_URL || 'https://careerapp-2qc6.onrender.com'}/api/institutions`);
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -97,7 +97,7 @@ export default function StudentApplication() {
       try {
         setDataLoading(prev => ({ ...prev, faculties: true }));
         
-        const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/faculties`);
+const response = await fetch(`${import.meta.env.VITE_API_URL || 'https://careerapp-2qc6.onrender.com'}/api/faculties`);
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -157,7 +157,7 @@ export default function StudentApplication() {
       try {
         setDataLoading(prev => ({ ...prev, courses: true }));
         
-        const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/courses`);
+const response = await fetch(`${import.meta.env.VITE_API_URL || 'https://careerapp-2qc6.onrender.com'}/api/courses`);
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -238,7 +238,8 @@ export default function StudentApplication() {
     };
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/student-applications`, {
+const response = await fetch(`${import.meta.env.VITE_API_URL || 'https://careerapp-2qc6.onrender.com'}/api/student-applications`,
+        {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
