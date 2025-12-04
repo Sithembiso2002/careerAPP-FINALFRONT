@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": "18.x || 20.x"
+    "node": "20.x"
   },
   "scripts": {
-    "preinstall": "rm -rf node_modules || true",
     "dev": "vite",
     "build": "npx vite build",
     "preview": "vite preview"
@@ -21,7 +20,7 @@
     "lucide-react": "^0.555.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.1"
+    "react-router-dom": "^6.30.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.17",
